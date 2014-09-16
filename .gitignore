@@ -24,7 +24,8 @@ wp-config.php
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -51,3 +52,11 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# PO File  #
+############
+*.po
+
+# Sublime Text 2 #
+##################
+sftp-config.json
