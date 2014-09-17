@@ -14,6 +14,9 @@ Extension for the Connections Business Directory applies face detection when cro
 
 This is an extension plugin for the [Connections Business Directory Plugin](http://wordpress.org/plugins/connections/) please be sure to install and active it before adding this plugin.
 
+Before you read any further...
+**This plugin absolutely requires PHP >= 5.3.**
+
 This extension plugin for started out just as a little experiment. I wanted to toy with face detection in images. I found this great little PHP library by [Karthik Tharavaad](https://github.com/mauricesvay/php-facedetection) that did just that. It works well for the most part but it is way too slow to be used for doing face detection on the fly. Then I remembered that [TechCruch](http://techcrunch.com/) released a library called [WP Asynchronous Tasks](https://github.com/techcrunch/wp-async-task). What this neat little library does is allow intensive processes, you know, such as face detection, be processed asynchronously. After a short while I had the face detection running in background tasks. These background task could probably be more optimized but this is probably good enough for a first release.
 
 Read this carefully...
@@ -22,7 +25,7 @@ Limitations:
 1. The first time an image in Connections is accessed, it will be processed in the background and until the image is finished processing, the image will be scaled and cropped from the center origin which is the default behavior.
 2. The face detection library can only detect a single face. So I suggest this extension only be used for people directories.
 3. The images should be clean and bright with the person facing as straight as possible for the best results.
-4. This very well could slow down you server for a period of time if there are a large number of images in the process queue.
+4. This very well could slow down the server for a period of time if there are a large number of images in the process queue.
 5. And ... use at your own risk.
 
 [Checkout the screenshots.](http://connections-pro.com/add-on/face-detect/)
