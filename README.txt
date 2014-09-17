@@ -79,6 +79,8 @@ None yet....
 
 [Screenshots can be found here.](http://connections-pro.com/add-on/face-detect/)
 
+1. Examples showing Face Detection results on business portraits.
+
 == Changelog ==
 
 = 1.0 09/16/2014 =
