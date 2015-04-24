@@ -84,7 +84,31 @@ class FaceDetector
 
         } elseif (is_file($file)) {
 
-            $this->canvas = imagecreatefromjpeg($file);
+            if ( FALSE !== $im_type = $this->imageType( $file ) ) {
+
+                switch ( $im_type ) {
+
+                    case IMAGETYPE_GIF:
+                        $this->canvas = imagecreatefromgif($file);
+                        break;
+
+                    case IMAGETYPE_JPEG:
+                        $this->canvas = imagecreatefromjpeg($file);
+                        break;
+
+                    case IMAGETYPE_PNG:
+                        $this->canvas = imagecreatefrompng($file);
+                        break;
+
+                    default:
+                        throw new Exception("Unsupported file type.");
+                        break;
+                }
+
+            } else {
+
+                throw new Exception("Unable to determine image type.");
+            }
 
         } else {
 
