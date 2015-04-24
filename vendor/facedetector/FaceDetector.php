@@ -115,6 +115,11 @@ class FaceDetector
             throw new Exception("Can not load $file");
         }
 
+        if ( is_null( $this->canvas ) ) {
+
+            throw new Exception("Failed to load image resource from $file of image type $im_type." );
+        }
+
         $im_width = imagesx($this->canvas);
         $im_height = imagesy($this->canvas);
 
