@@ -58,6 +58,24 @@ class FaceDetector
         $this->detection_data = unserialize(file_get_contents($detection_data));
     }
 
+    private function imageType( $file ) {
+
+        if ( ! function_exists( 'exif_imagetype' ) ) {
+
+            if ( FALSE !== ( list( $width, $height, $type, $attr ) = getimagesize( $file ) ) ) {
+
+                return $type;
+            }
+
+            return FALSE;
+
+        } else {
+
+            return exif_imagetype( $file );
+        }
+
+    }
+
     public function faceDetect($file)
     {
         if (is_resource($file)) {
