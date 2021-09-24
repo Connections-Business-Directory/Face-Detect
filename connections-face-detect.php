@@ -1,6 +1,6 @@
 <?php
 /**
- * An extension for the Connections plugin attempts to do face detection when croping an image to prevent the face from being cropped out of the image.
+ * An extension for the Connections plugin attempts to do face detection when cropping an image to prevent the face from being cropped out of the image.
  *
  * @package   Connections Face Detect
  * @category  Extension
@@ -64,7 +64,7 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 		}
 
 		/**
-		 * Include the plugin dependancies.
+		 * Include the plugin dependencies.
 		 *
 		 * @access private
 		 * @since  1.0
@@ -77,7 +77,7 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 			// Include WP Asynchronous Tasks
 			require_once CNFD_PATH . 'vendor/wp-async-task/wp-async-task.php';
 
-			// Incude the Face Crop Async Task
+			// Include the Face Crop Async Task
 			require_once CNFD_PATH . 'includes/async-task.php';
 		}
 
@@ -90,13 +90,13 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 		 * Callback for the cn_get_image_atts filter.
 		 *
 		 * This will check the face detect option cache to see if the
-		 * $source image has ben processed thru face detect and use the
+		 * $source image has been processed through face detect and use the
 		 * stored crop_focus if it has.
 		 *
 		 * @access private
 		 * @since  1.0
 		 * @static
-		 * @param  array  $atts   The associative array that is passed to an instance of cnImage::get() when processing an immage.
+		 * @param  array  $atts   The associative array that is passed to an instance of cnImage::get() when processing an image.
 		 * @param  string $source The image URL or absolute path. NOTE: The onl valid pathhs will be: WP_CONTENT/UPLOADS or STYLESHEETPATH
 		 * @param  string $return What to return, @see cnImage::get()
 		 *
@@ -124,7 +124,7 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 		 * @access private
 		 * @since  1.0
 		 * @static
-		 * @param  array  $atts   The associative array that is passed to an instance of cnImage::get() when processing an immage.
+		 * @param  array  $atts   The associative array that is passed to an instance of cnImage::get() when processing an image.
 		 * @param  string $source The image URL or absolute path. NOTE: The onl valid pathhs will be: WP_CONTENT/UPLOADS or STYLESHEETPATH
 		 * @param  string $return What to return, @see cnImage::get()
 		 *
@@ -211,7 +211,7 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 
 	/**
 	 * Since Connections loads at default priority 10, and this extension is dependent on Connections,
-	 * we'll load with priority 11 so we know Connections will be loaded and ready first.
+	 * we'll load with priority 11, so we know Connections will be loaded and ready first.
 	 */
 	add_action( 'plugins_loaded', 'Connections_Face_Detect', 11 );
 
