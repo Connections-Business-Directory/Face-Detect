@@ -185,28 +185,27 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 	 * Start up the extension.
 	 *
 	 * @access public
-	 * @since 1.0
+	 * @since  1.0
 	 *
 	 * @return Connections_Face_Detect|false
 	 */
 	function Connections_Face_Detect() {
 
-			if ( class_exists('connectionsLoad') ) {
+		if ( class_exists( 'connectionsLoad' ) ) {
 
-					return new Connections_Face_Detect();
+			return new Connections_Face_Detect();
 
-			} else {
+		} else {
 
-				add_action(
-					'admin_notices',
-					 create_function(
-						 '',
-						'echo \'<div id="message" class="error"><p><strong>ERROR:</strong> Connections must be installed and active in order use Connections Face Detect.</p></div>\';'
-						)
-				);
+			add_action(
+				'admin_notices',
+				function() {
+					echo '<div id="message" class="error"><p><strong>ERROR:</strong> Connections must be installed and active in order use Connections Face Detect.</p></div>';
+				}
+			);
 
-				return FALSE;
-			}
+			return false;
+		}
 	}
 
 	/**
