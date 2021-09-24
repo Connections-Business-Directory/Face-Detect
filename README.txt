@@ -28,7 +28,7 @@ Limitations:
 
 [Checkout the screenshots.](http://connections-pro.com/add-on/face-detect/)
 
-Here are other great extensions that enhance your expirence with the Connections Business Directory:
+Here are other great extensions that enhance your experience with the Connections Business Directory:
 
 Utility
 
