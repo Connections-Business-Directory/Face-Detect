@@ -83,6 +83,22 @@ Photos by [stockimages](http://www.freedigitalphotos.net/images/view_photog.php?
 
 == Changelog ==
 
+= 1.1 09/23/2021 =
+* NEW: Add `FaceDetector::imageType()` helper function.
+* NEW: Add support for GIFs and PNGs.
+* TWEAK: Remove use of create function.
+* BUG: Ensure `$this->canvas` is not NULL before processing else throw exception.
+* OTHER: Add screenshot to readme.txt.
+* OTHER: Add photo credit to readme.txt.
+* OTHER: Correct misspellings.
+* OTHER: Update copyright year.
+* OTHER: Update PHP requires to 5.6.20.
+* OTHER: Update URLs from `http` to `https`.
+* OTHER: Update requires and tested to WordPress version in readme.txt.
+* DEV: Update .gitignore to exclude phpStorm.
+* DEV: phpDoc update.
+* DEV: Line separators.
+
 = 1.0 09/16/2014 =
 * Initial release.
 
@@ -90,3 +106,7 @@ Photos by [stockimages](http://www.freedigitalphotos.net/images/view_photog.php?
 
 = 1.0 =
 Initial release.
+
+= 1.1 =
+It is recommended to back up before updating. Requires WordPress >= 5.1 and PHP >= 5.6.20 PHP version >= 7.2 recommended.
+
