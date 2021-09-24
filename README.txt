@@ -79,7 +79,7 @@ None yet....
 
 1. Examples showing Face Detection results on business portraits.
 
-Photos by [stockimages](http://www.freedigitalphotos.net/images/view_photog.php?photogid=4096) via [freedigitalphotos.net](http://www.freedigitalphotos.net/)
+Photos by [stockimages](http://www.freedigitalphotos.net/images/view_photog.php?photogid=4096) via [freedigitalphotos.net](http://www.freedigitalphotos.net/)
 
 == Changelog ==
 
