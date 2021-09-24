@@ -60,3 +60,7 @@ $RECYCLE.BIN/
 # Sublime Text 2 #
 ##################
 sftp-config.json
+
+# phpStorm #
+############
+.idea
