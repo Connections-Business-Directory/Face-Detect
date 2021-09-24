@@ -187,7 +187,7 @@ if ( ! class_exists('Connections_Face_Detect') ) {
 	 * @access public
 	 * @since 1.0
 	 *
-	 * @return mixed object | bool
+	 * @return Connections_Face_Detect|false
 	 */
 	function Connections_Face_Detect() {
 
