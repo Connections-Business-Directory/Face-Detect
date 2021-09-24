@@ -4,6 +4,7 @@ Donate link: http://connections-pro.com/
 Tags: addresses, address book, addressbook, bio, bios, biographies, business, businesses, business directory, business-directory, business directory plugin, directory plugin, directory widget, church, contact, contacts, connect, connections, directory, directories, hcalendar, hcard, ical, icalendar, image, images, list, lists, listings, member directory, members directory, members directories, microformat, microformats, page, pages, people, profile, profiles, post, posts, plugin, shortcode, staff, user, users, vcard, wordpress business directory, wordpress directory, wordpress directory plugin, wordpress business directory, face detect
 Requires at least: 3.8
 Tested up to: 4.0
+Requires PHP: 5.6.20
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,9 +14,6 @@ Extension for the Connections Business Directory applies face detection when cro
 == Description ==
 
 This is an extension plugin for the [Connections Business Directory Plugin](http://wordpress.org/plugins/connections/) please be sure to install and active it before adding this plugin.
-
-Before you read any further...
-**This plugin absolutely requires PHP >= 5.3.**
 
 This extension plugin for started out just as a little experiment. I wanted to toy with face detection in images. I found this great little PHP library by [Karthik Tharavaad](https://github.com/mauricesvay/php-facedetection) that did just that. It works well for the most part but it is way too slow to be used for doing face detection on the fly. Then I remembered that [TechCruch](http://techcrunch.com/) released a library called [WP Asynchronous Tasks](https://github.com/techcrunch/wp-async-task). What this neat little library does is allow intensive processes, you know, such as face detection, be processed asynchronously. After a short while I had the face detection running in background tasks. These background task could probably be more optimized but this is probably good enough for a first release.
 
